@@ -1,0 +1,80 @@
+###CONSULTA DEL SERVICIO###
+GET http://localhost:8000/api/tarea
+Accept: application/json 
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTQyODEyNjIzYmZjMWQyNzA0ZDUwOWZiZjVkNjY3M2M4OGMzYTYxZGQ1MDVjZTFlZDc5NmEwNDYyZDMzN2Q4NWYyZTQwMTEzMDNiMzY1ZTIiLCJpYXQiOjE2NTQwNDM3MzEuMzQwNzYxLCJuYmYiOjE2NTQwNDM3MzEuMzQwNzY2LCJleHAiOjE2ODU1Nzk3MzEuMjYxMjgyLCJzdWIiOiI4Iiwic2NvcGVzIjpbXX0.LiRq93uWRxAuSWL6PDa9wEASCuvd9a6Taxs1-z1ReGbYnrPED4UT7Vi8k1Lq-RLXdRT9YBWWB8624dSh92MOfAy-dmrpiIPysu7R5Ecm-cP9QNHwPOdyGgcDw0YOIRYxuMEpFpTiQanAsUCy9SOb1N-pVq9CrNIxBrWvaapuoeAM1FdORVRwzPbJFaDy3VpCjuqQMnly6670FniGXdHytml1KbtQgAf73jQjM5DSMViu3CLfolHgN5u_RHCfLX3sLEEznP9nPomPYQUa7N2ahwpUi2KSAbTkZb9dlEZLtj8Rpj8VhN81rZFzjo41TkhUxBAJkDnGtXuuEUyGXWCGyczMGQVBrPnHLgfAKq13JiYwpJP5ms34RQWFCWbqTN1lQjTX5Yoy9eDgpWBLowD3Zx8F83ggJlTw6hrz9DXJlQoqrH7a2DO5KoY68y6t7hY0UZbXHVe2V9x8VgD7mV3Xb57fjRde7G2inlIvE9tS66mrwg5xEOCgFSIe-yG00ArTBdyKVydq9vkLUPFTfIJX9c_x1xxzzGSGyKIkfa3-ELwWl1iHCW2E_l7tlf6uV4hCXZTPrctKtyNuq_mnCx8T9PNoRBofdX7SMOuG-UncArVYHYjIkMFWFQlZ3KEoKSq3uF8ifGgzerHinq5V6Q9KDP13rfmKctSxnjN8UW_844Y
+
+### INSERTAR TAREAS A NUESTRO PROYECTO 
+POST http://localhost:8000/api/tarea
+Accept: application/json
+Content-Type: application/json
+
+{
+    "nombre" : "PROGRAMACION WEB CON FRAMEWORKS - DS8",
+    "descripcion" : "Crear una aplicacion completa en laravel, como un servicio de punto de venta con loguin",
+    "estatus" : "PENDIENTE"
+}
+
+### OBTEN UNA TAREA POR ID
+GET http://localhost:8000/api/tarea/2
+Accept: application/json
+Content-Type: application/json
+
+### ACTUALIZAR TAREA POR ID 
+PUT  http://localhost:8000/api/tarea/3
+Accept: application/json
+Content-Type: application/json
+
+{
+    "nombre" : "PROGRAMACION WEB CON FRAMEWORKS - DS8",
+    "descripcion" : "CREAR UN SERVICIO SOAP",
+    "estatus" : "COMPLETADA"
+}
+
+### ELIMINAR TAREAS POR ID
+DELETE  http://localhost:8000/api/tarea/2
+Accept: application/json
+Content-Type: application/json
+
+
+### INSERTAR USUARIO A LA BD 
+POST http://localhost:8000/api/registro
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name" : "Mariano",
+    "email" : "Mari@gmail.com",
+    "password" : "12345678",
+    "password_confirmation" : "12345678"
+}
+
+
+### lOGUEO DEL SISTEMA
+POST http://localhost:8000/api/loguin
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email" : "jj@gmail.com",
+    "password" : "12345678"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
